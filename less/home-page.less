@@ -8,10 +8,24 @@
 
     h2 {
       padding: 15px;
+
+      @media @mobile {
+        padding: 3% 0;
+        width: 90%;
+        margin: 0 auto;
+      }
+
     }
 
     p {
       padding: 0 15px;
+
+      @media @mobile {
+        padding: 0;
+        width: 90%;
+        margin: 0 auto 2%;
+      }
+
     }
 
   }
@@ -51,10 +65,22 @@
 
     h3 {
       margin-top: 11px;
+
+      @media @mobile {
+        width: 95%;
+        margin: 0 auto;
+      }
+
     }
 
     p {
       margin-top: 13px;
+
+      @media @mobile {
+        width: 95%;
+        margin: 13px auto 0;
+      }
+
     }
   }
 
@@ -67,8 +93,9 @@
 
     @media @mobile {
       flex-direction: column-reverse;
-      margin-top: 20px;
+      margin-top: 10px;
       padding: 0;
+      border-top: 0;
     }
 
     .walk-text {
