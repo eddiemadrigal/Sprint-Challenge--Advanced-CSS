@@ -34,9 +34,15 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website will utilize media break points and will write CSS rules based on the size of the screen.  A fully responsive website will include all of the features a developer would typically encounter in a fixed, fluid and adaptive website.  rems or percentages, for example, would replace pixel values; the width would not be fixed like what is found in fixed websites and the goal would be that there would be styling rules for every screen.
+
 2. Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Mobile first web design starts with having a layout based on how it looks and behaves in a mobile device with the intention of having the final design be based on how it looks on a typical desktop computer.  Desktop first is the opposite.  A web developer begins by designing a webpage view based on how it appears on desktop screen and then break points are added as the design goes to tablet and then mobile.
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+
+The value of rem is a scale value based on a font size of 10px.  Due to the fact that the default font size is 16px, and if the font is reduced by 37.5% in the html tag, the developer can then work with a more finite font size value.  And, because a rem is a scale value that depends on the font-size value found in theroot element of the document (html), the 62.5% of the default 16px then gives an updated font-size value of 10px.  This 10px font size is equivalent to 1rem.  So, if a font size needs to be 20px, the rem value would be 2.  If the font size needs to be 36px, the rem value would be 3.6.
 
 4. How would you describe preprocessing to someone new to CSS?
 
