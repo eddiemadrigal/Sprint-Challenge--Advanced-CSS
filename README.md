@@ -46,7 +46,11 @@ The value of rem is a scale value based on a font size of 10px.  Due to the fact
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allows the web develper to quickly update existing CSS rules as well as allowing developers to better organize code.  Through the use of variables, imports, functions, nesting, mixins, compilers, watchers and so forth, the task of managing the CSS code for large scale web sites becomes much more doable.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is the fact that we can treat preprocessing as program that can run functions, use variables and imports and that it must be compiled before the website can use the output in the form of CSS.  There is no concept in preprocessing, aside from not knowing all of the features available, that is giving me trouble.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
