@@ -137,6 +137,11 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 h1,
 h2,
 h3,
@@ -144,6 +149,12 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
+}
+h1 {
+  font-size: 3.6rem;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 1% 0;
 }
 h2 {
   font-size: 3.2rem;
@@ -155,10 +166,28 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
+.btn {
+  color: white;
+  font-size: 1.6rem;
+  background-color: #4f4f64;
+  padding: 2% 3%;
+  width: 30%;
+  text-align: center;
+  border-radius: 7px;
+}
+.top-nav {
+  background-color: #f4f4f4;
+}
+.top-nav ul {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
   margin: 0 auto;
+  padding: 1% 0;
+}
+.top-nav ul li {
+  font-size: 1.8rem;
+  color: black;
 }
 footer {
   color: #22283B;
