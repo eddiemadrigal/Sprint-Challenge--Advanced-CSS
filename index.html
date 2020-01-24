@@ -18,18 +18,18 @@
 <body>
 
   <!-- navigation code here -->
-<section>
-  <h1>SpaceWalkers</h1>
-  <nav class="top-nav">
-    <ul>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Blog</li>
-      <li>Contact</li>
-      <li>Sign In</li>
-    </ul>
-  </nav>
-</section>
+  <section>
+    <h1>SpaceWalkers</h1>
+    <nav class="top-nav">
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Blog</li>
+        <li>Contact</li>
+        <li>Sign In</li>
+      </ul>
+    </nav>
+  </section>
   <div class="container home">
 
     <header class="intro">
@@ -77,6 +77,38 @@
       <div class="walk-img">
         <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
+
+    </section>
+
+    <section class="contact-form" id="contact">
+      <form name="contact" action="https://eddiemadrigal.net/processcontactformurl.php" method="post">
+        <input type="hidden" name="url" value="github">
+        <table>
+          <tr>
+            <td>
+              <h3>Contact Form</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Name:</p><input type="text" name="name" placeholder="Your Name" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Email:</p><input type="email" name="email" placeholder="Your Email Address" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Message:</p><textarea name="message"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Send Message"></td>
+          </tr>
+        </table>
+      </form>
 
     </section>
 

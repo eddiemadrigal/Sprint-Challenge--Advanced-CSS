@@ -292,11 +292,15 @@ footer {
 .home .walk .walk-text .btn {
   color: white;
   font-size: 1.6rem;
-  background-color: #4f4f64;
+  background-color: blue;
   padding: 2% 3%;
   width: 30%;
   text-align: center;
   border-radius: 7px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: green;
+  color: yellow;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
