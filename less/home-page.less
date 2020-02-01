@@ -1,17 +1,33 @@
 // Home Content
 
+
+
 .home {
 
   .intro {
 
     h2 {
       padding: 15px;
+
+      @media @phone {
+        padding: 3% 0;
+        width: 90%;
+        margin: 0 auto;
+      }
+
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
+
+      @media @phone {
+        padding: 0;
+        width: 90%;
+        margin: 0 auto 2%;
+      }
+
     }
-  
+
   }
 
   .space-images {
@@ -19,12 +35,29 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+
+      .sky,
+      .launch {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 90%;
+        display: block;
+        margin: 2% auto;
+
+      }
+
     }
+
   }
 
   .visit-planets {
@@ -32,10 +65,22 @@
 
     h3 {
       margin-top: 11px;
+
+      @media @phone {
+        width: 95%;
+        margin: 0 auto;
+      }
+
     }
 
     p {
       margin-top: 13px;
+
+      @media @phone {
+        width: 95%;
+        margin: 13px auto 0;
+      }
+
     }
   }
 
@@ -45,6 +90,13 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
+    @media @phone {
+      flex-direction: column-reverse;
+      margin-top: 10px;
+      padding: 0;
+      border-top: 0;
+    }
 
     .walk-text {
       width: 50%;
@@ -57,14 +109,46 @@
         margin-bottom: 26px;
       }
 
+
       .btn {
+        color: white;
+        font-size: 1.6rem;
+        background-color:blue;
+        padding: 2% 3%;
+        width: 30%;
+        text-align: center;
+        border-radius: 7px;
+        
+        &:hover {
+          background-color: green;
+          color: yellow;
+        }
+
+        @media @phone {
+          width: 100%;
+          margin: 0 auto;
+          padding: 3%;
+        }
+
       }
+
+      @media @phone {
+        width: 90%;
+        margin: 2% auto;
+      }
+
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +156,19 @@
       }
     }
   }
-}// home
+}
+
+// home
+
+// animation
+
+h1 {
+  animation-name: h1-move;
+  animation-duration: 2s;
+}
+
+@keyframes h1-move {
+  0% { margin-left: -300px; }
+  50% { margin-left: 100px; }
+  100% { margin-left: 0 }
+}
